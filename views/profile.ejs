@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+</head>
+
+<!-- Change code below this line -->
+
+<body>
+    <div class="profile-card">
+        <div class="avatar"><img src="/images/ved.jpg" alt="profile-img"></div>
+        <div class="salutation">
+            <div class="name"><%= user.fullname%></div>
+            <div class="designation">@<%= user.username%></div>
+        </div>
+        <div class="options">
+            <button class="status"><img src="https://www.flaticon.com/free-icon/coding_4260895?term=coding&page=1&position=82&origin=search&related_id=4260895" alt="" class="btn-img"><span>Set a Status</span></button>
+            <button class="edit-profile"><img src="https://www.flaticon.com/free-icon/user-avatar_8188360?term=edit+profile&page=1&position=3&origin=search&related_id=8188360" alt="" class="btn-img"><span>Edit Profile</span></button>
+            <button class="more" id="more-btn"><img src="https://www.flaticon.com/free-icon/plus_1828926?term=more&page=1&position=11&origin=search&related_id=1828926" alt="" class="btn-img"><span>More</span></button>
+        </div>
+        <a id="logout" href="/logout">Logout</a>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="text" name="filecaption" placeholder="some caption">
+            <input type="file" name="file">
+            <input type="submit">
+        </form>
+    </div>
+    <div class="posts-container">
+        <div class="card" style="width: 18rem;">
+            <img src="/images/uploads/f2dddd33-5028-48ec-aa2f-71e1d5d450cd.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+<!-- Change code above this line -->
+
+</html>
